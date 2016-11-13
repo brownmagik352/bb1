@@ -198,35 +198,6 @@
             </objects>
             <point key="canvasLocation" x="2769" y="-1460"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="P5i-LX-qS6">
-            <objects>
-                <tableViewController id="RsU-3S-6NN" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V4R-M3-mET">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="Vp7-Kb-etI">
-                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vp7-Kb-etI" id="mNV-wg-uGv">
-                                    <frame key="frameInset" width="375" height="89"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="RsU-3S-6NN" id="f0x-lG-fy6"/>
-                            <outlet property="delegate" destination="RsU-3S-6NN" id="WLG-X2-iZ2"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Chat" image="Speech Bubble-50" id="oQG-ee-qr4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qr8-Ko-P4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="804" y="752"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -240,7 +211,7 @@
                     <connections>
                         <segue destination="cfg-Pu-yOs" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="pfZ-ap-Ug2"/>
-                        <segue destination="RsU-3S-6NN" kind="relationship" relationship="viewControllers" id="CZy-TC-rTH"/>
+                        <segue destination="ebN-vq-AKR" kind="relationship" relationship="viewControllers" id="9IF-F3-MS3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -266,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="758" y="-801"/>
         </scene>
-        <!--Listings-->
+        <!--Listing-->
         <scene sceneID="7Zg-Ds-xF8">
             <objects>
-                <tableViewController id="VYp-4G-7Xl" userLabel="Listings" customClass="ListingTableViewController" customModule="bb1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="VYp-4G-7Xl" userLabel="Listing" customClass="ListingTableViewController" customModule="bb1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="GzK-cs-kVh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,13 +309,96 @@
                             <outlet property="delegate" destination="VYp-4G-7Xl" id="RNf-jn-K7t"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Results" id="s3S-jA-xOS">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Sr5-8H-suN"/>
-                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lu-J8-fCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1663" y="0.0"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="IMM-P8-87M">
+            <objects>
+                <tableViewController id="ebN-vq-AKR" customClass="ChatTableViewController" customModule="bb1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ryw-g6-izu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="90" id="ebD-wF-Kah" customClass="ChatTableViewCell" customModule="bb1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebD-wF-Kah" id="Tge-tN-nnA">
+                                    <frame key="frameInset" width="375" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9S-4j-kFc">
+                                            <frame key="frameInset" width="77" height="89"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RG-8X-l3V">
+                                            <frame key="frameInset" minX="85" width="190" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-qN-fQ8">
+                                            <frame key="frameInset" minX="286" minY="10" width="81" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.00097158325219999996" green="0.77813227470000002" blue="0.001507356878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVj-ad-mBh">
+                                            <frame key="frameInset" minX="286" minY="60" width="81" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r80-ev-GYX">
+                                            <frame key="frameInset" minX="85" minY="39" width="190" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzH-nx-b7f">
+                                            <frame key="frameInset" minX="286" minY="36" width="81" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65E-UV-Rth">
+                                            <frame key="frameInset" minX="85" minY="68" width="81" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="chatTypeLabel" destination="65E-UV-Rth" id="MTr-SG-a3Q"/>
+                                    <outlet property="conditionLabel" destination="kzH-nx-b7f" id="rPO-pU-2ox"/>
+                                    <outlet property="courseLabel" destination="r80-ev-GYX" id="led-4G-lOd"/>
+                                    <outlet property="photoImageView" destination="u9S-4j-kFc" id="PUx-kn-nbl"/>
+                                    <outlet property="priceLabel" destination="7mN-qN-fQ8" id="zeB-0V-GOD"/>
+                                    <outlet property="rentLabel" destination="EVj-ad-mBh" id="iBB-PX-qnn"/>
+                                    <outlet property="titleLabel" destination="5RG-8X-l3V" id="fzy-3W-w6k"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ebN-vq-AKR" id="C7t-jt-Pm0"/>
+                            <outlet property="delegate" destination="ebN-vq-AKR" id="HRm-nZ-fh4"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Chat" image="Speech Bubble-50" id="GER-Wg-EGI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeg-Zh-MyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="723"/>
         </scene>
     </scenes>
     <resources>

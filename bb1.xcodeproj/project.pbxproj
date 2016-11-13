@@ -10,6 +10,9 @@
 		881D0C9D1DD8CEA600A9B511 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0C9C1DD8CEA600A9B511 /* ListingTableViewCell.swift */; };
 		881D0C9F1DD8D34300A9B511 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0C9E1DD8D34300A9B511 /* Listing.swift */; };
 		881D0CA11DD8D6FA00A9B511 /* ListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA01DD8D6FA00A9B511 /* ListingTableViewController.swift */; };
+		881D0CA31DD91FD500A9B511 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA21DD91FD500A9B511 /* Chat.swift */; };
+		881D0CA51DD920B400A9B511 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA41DD920B400A9B511 /* ChatTableViewCell.swift */; };
+		881D0CA71DD9236700A9B511 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA61DD9236700A9B511 /* ChatTableViewController.swift */; };
 		88F2469C1DD03D5600434D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2469B1DD03D5600434D14 /* AppDelegate.swift */; };
 		88F246A31DD03D5700434D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F246A11DD03D5700434D14 /* Main.storyboard */; };
 		88F246A51DD03D5700434D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F246A41DD03D5700434D14 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 		881D0C9C1DD8CEA600A9B511 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
 		881D0C9E1DD8D34300A9B511 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		881D0CA01DD8D6FA00A9B511 /* ListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewController.swift; sourceTree = "<group>"; };
+		881D0CA21DD91FD500A9B511 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		881D0CA41DD920B400A9B511 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		881D0CA61DD9236700A9B511 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		88F246981DD03D5600434D14 /* bb1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bb1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F2469B1DD03D5600434D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F246A21DD03D5700434D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				881D0C9C1DD8CEA600A9B511 /* ListingTableViewCell.swift */,
 				881D0C9E1DD8D34300A9B511 /* Listing.swift */,
 				881D0CA01DD8D6FA00A9B511 /* ListingTableViewController.swift */,
+				881D0CA21DD91FD500A9B511 /* Chat.swift */,
+				881D0CA41DD920B400A9B511 /* ChatTableViewCell.swift */,
+				881D0CA61DD9236700A9B511 /* ChatTableViewController.swift */,
 			);
 			path = bb1;
 			sourceTree = "<group>";
@@ -143,10 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881D0CA31DD91FD500A9B511 /* Chat.swift in Sources */,
 				881D0CA11DD8D6FA00A9B511 /* ListingTableViewController.swift in Sources */,
 				88F2469C1DD03D5600434D14 /* AppDelegate.swift in Sources */,
+				881D0CA51DD920B400A9B511 /* ChatTableViewCell.swift in Sources */,
 				881D0C9F1DD8D34300A9B511 /* Listing.swift in Sources */,
 				881D0C9D1DD8CEA600A9B511 /* ListingTableViewCell.swift in Sources */,
+				881D0CA71DD9236700A9B511 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
