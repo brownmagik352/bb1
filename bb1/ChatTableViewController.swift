@@ -14,12 +14,12 @@ class ChatTableViewController: UITableViewController {
     
     func loadSampleData() {
         
-        let chat1 = Chat(title: "Data Structures", price: 22.57, course: "CPSC223", purchase_or_rent: "Purchase", condition: "Used", buy_or_sell: "Seller", photo: #imageLiteral(resourceName: "cs1"))
-        let chat2 = Chat(title: "Principles of Economics", price: 34.27, course: "ECON110", purchase_or_rent: "Purchase", condition: "New", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "econ1"))
+        let chat1 = Chat(title: "Data Structures", price: 22.57, course: "CPSC223", purchase_or_rent: "Buy", condition: "Used", buy_or_sell: "Seller", photo: #imageLiteral(resourceName: "cs1"))
+        let chat2 = Chat(title: "Principles of Economics", price: 34.27, course: "ECON110", purchase_or_rent: "Buy", condition: "New", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "econ1"))
         let chat3 = Chat(title: "Calculus", price: 10.55, course: "MATH120", purchase_or_rent: "Rent", condition: "Used", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "calc1"))
-        let chat4 = Chat(title: "Biology", price: 22.33, course: "MCDB101", purchase_or_rent: "Purchase", condition: "Used", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "bio1"))
+        let chat4 = Chat(title: "Biology", price: 22.33, course: "MCDB101", purchase_or_rent: "Buy", condition: "Used", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "bio1"))
         let chat5 = Chat(title: "Psychology", price: 11.01, course: "PSYC101", purchase_or_rent: "Rent", condition: "Used", buy_or_sell: "Seller", photo: #imageLiteral(resourceName: "psych1"))
-        let chat6 = Chat(title: "Principles of Economics", price: 55.18, course: "ECON110", purchase_or_rent: "Purchase", condition: "New", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "econ1"))
+        let chat6 = Chat(title: "Principles of Economics", price: 55.18, course: "ECON110", purchase_or_rent: "Buy", condition: "New", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "econ1"))
         let chat7 = Chat(title: "Biology", price: 8.75, course: "MCDB101", purchase_or_rent: "Rent", condition: "Used", buy_or_sell: "Buyer", photo: #imageLiteral(resourceName: "bio1"))
         
         chats += [chat1, chat2, chat3, chat4, chat5, chat6, chat7]

@@ -14,13 +14,13 @@ class ListingTableViewController: UITableViewController {
     
     func loadSampleData() {
         
-        let listing1 = Listing(title: "Calculus", price: 25.99, course: "MATH120", purchase_or_rent: "Purchase", condition: "Used",photo: #imageLiteral(resourceName: "calc1"))
-        let listing2 = Listing(title: "Calculus", price: 12.89, course: "MATH120", purchase_or_rent: "Purchase", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
+        let listing1 = Listing(title: "Calculus", price: 25.99, course: "MATH120", purchase_or_rent: "Buy", condition: "Used",photo: #imageLiteral(resourceName: "calc1"))
+        let listing2 = Listing(title: "Calculus", price: 12.89, course: "MATH120", purchase_or_rent: "Buy", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
         let listing3 = Listing(title: "Calculus", price: 32.15, course: "MATH120", purchase_or_rent: "Rent", condition: "New", photo: #imageLiteral(resourceName: "calc1"))
-        let listing4 = Listing(title: "Calculus", price: 28.99, course: "MATH120", purchase_or_rent: "Purchase", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
+        let listing4 = Listing(title: "Calculus", price: 28.99, course: "MATH120", purchase_or_rent: "Buy", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
         let listing5 = Listing(title: "Calculus", price: 22.01, course: "MATH120", purchase_or_rent: "Rent", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
-        let listing6 = Listing(title: "Calculus", price: 12.37, course: "MATH120", purchase_or_rent: "Purchase", condition: "New", photo: #imageLiteral(resourceName: "calc1"))
-        let listing7 = Listing(title: "Calculus", price: 18.37, course: "MATH120", purchase_or_rent: "Purchase", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
+        let listing6 = Listing(title: "Calculus", price: 12.37, course: "MATH120", purchase_or_rent: "Buy", condition: "New", photo: #imageLiteral(resourceName: "calc1"))
+        let listing7 = Listing(title: "Calculus", price: 18.37, course: "MATH120", purchase_or_rent: "Buy", condition: "Used", photo: #imageLiteral(resourceName: "calc1"))
         
         listings += [listing1, listing2, listing3, listing4, listing5, listing6, listing7]
         
