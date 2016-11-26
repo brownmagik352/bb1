@@ -1,14 +1,14 @@
 //
-//  UploadViewController.swift
+//  ISBNViewController.swift
 //  bb1
 //
-//  Created by Apurv Suman on 11/25/16.
+//  Created by Apurv Suman on 11/26/16.
 //  Copyright © 2016 Apurv Suman. All rights reserved.
 //
 
 import UIKit
 
-class UploadViewController: UIViewController {
+class ISBNViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,21 +22,18 @@ class UploadViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
-    @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let alertController = UIAlertController(title: "SUCCESS", message: "Your Item Was Successfully Uploaded", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(action)
-        
-        present(alertController, animated: true, completion: nil)
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
     
+    @IBAction func uploadDone(sender: UIStoryboardSegue) {
+        //print("HELLO")
+    }
 
 }
