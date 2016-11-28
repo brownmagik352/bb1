@@ -26,7 +26,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VYp-4G-7Xl" kind="show" id="7wo-d6-lDa"/>
+                                    <segue destination="9wm-Qp-VYV" kind="show" id="XxV-Ix-Krf"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ISBN, Class, Author, ..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OeZ-xC-FX9">
@@ -198,11 +198,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fat-CC-q2K">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="gWb-i7-GAx">
+                            <color key="tintColor" red="0.29411764709999999" green="0.0" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancel:" destination="tqw-eL-BQL" id="nti-jc-iCk"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Upload" id="G4Z-9W-b0g">
+                            <color key="tintColor" red="0.29411764709999999" green="0.0" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="MmQ-0p-GWQ" kind="unwind" unwindAction="uploadDoneWithSender:" id="fCc-qP-gsF"/>
                             </connections>
@@ -329,7 +331,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListingTableViewCell" rowHeight="90" id="wkW-Ot-Gmi" customClass="ListingTableViewCell" customModule="bb1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wkW-Ot-Gmi" id="bdD-XR-uLA">
                                     <frame key="frameInset" width="375" height="90"/>
@@ -392,10 +394,18 @@
                             <outlet property="delegate" destination="VYp-4G-7Xl" id="RNf-jn-K7t"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Results" id="ets-Bb-csV">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="n0m-KD-yuk">
+                            <color key="tintColor" red="0.29411764709999999" green="0.0" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="back:" destination="VYp-4G-7Xl" id="xrZ-6G-ras"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lu-J8-fCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="-20"/>
+            <point key="canvasLocation" x="2751.1999999999998" y="-20.239880059970016"/>
         </scene>
         <!--Chat-->
         <scene sceneID="IMM-P8-87M">
@@ -521,7 +531,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clf-Uo-9M9">
                                             <frame key="frameInset" minX="62" minY="15" width="305" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.89715051651000977" green="0.89775222539901733" blue="0.9179338812828064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -541,11 +551,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="WJL-X9-3ru">
                         <barButtonItem key="leftBarButtonItem" title="Back to Chats" id="qWJ-ba-SnA">
+                            <color key="tintColor" red="0.29411764705882354" green="0.0" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="Back:" destination="p7C-iJ-5Bc" id="anE-IL-BaY"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Mark as Sold" id="shr-i8-o2C">
+                            <color key="tintColor" red="0.29411764705882354" green="0.0" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="bookSold:" destination="p7C-iJ-5Bc" id="1fJ-s8-zJf"/>
                             </connections>
@@ -651,11 +663,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Riz-RN-Vs8">
                         <barButtonItem key="leftBarButtonItem" title="Back to Results" id="hkE-lH-i5j">
+                            <color key="tintColor" red="0.29411764709999999" green="0.0" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="Back:" destination="0KB-fa-aGd" id="cbn-lU-o7G"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Chat with Seller" id="sQN-6e-Ry4">
+                            <color key="tintColor" red="0.29411764709999999" green="0.0" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="ygJ-2K-Usf" kind="unwind" unwindAction="uploadDoneWithSender:" id="7q2-va-UqQ"/>
                             </connections>
@@ -665,7 +679,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ouk-00-uWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ygJ-2K-Usf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3638" y="-20"/>
+            <point key="canvasLocation" x="4576.8000000000002" y="-20.239880059970016"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nah-I8-v4H">
@@ -683,7 +697,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epK-pa-b8W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.8000000000002" y="-20.239880059970016"/>
+            <point key="canvasLocation" x="3708" y="-20.239880059970016"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2sG-jM-rLn">
@@ -702,6 +716,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sp3-KW-tiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1812" y="771"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mQ7-o6-bXB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9wm-Qp-VYV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kkG-3a-2xK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VYp-4G-7Xl" kind="relationship" relationship="rootViewController" id="FZG-ii-hzR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8Y-1M-hdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="-20.239880059970016"/>
         </scene>
     </scenes>
     <resources>

@@ -68,8 +68,10 @@ class TempChatTableViewController: UITableViewController {
         cell.message.layer.cornerRadius = 5
         cell.message.sizeToFit()
         if tempChat.photo == #imageLiteral(resourceName: "apurv_circle") {
-            cell.message.backgroundColor = UIColor(red: 0.55, green: 0.49, blue: 0.83, alpha: 0.5)
-            // #8d7dd4 in UIColor
+            // #8d7dd4 (light purple) in UIColor
+            cell.backgroundColor = UIColor(red: 0.55, green: 0.49, blue: 0.83, alpha: 0.5)
+            cell.message.backgroundColor = nil
+            
         }
         
         return cell
