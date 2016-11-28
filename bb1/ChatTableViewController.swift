@@ -29,6 +29,7 @@ class ChatTableViewController: UITableViewController {
         super.viewDidLoad()
         
         loadSampleData()
+        self.tableView.contentInset = UIEdgeInsetsMake(25, 0, 0, 0)
 
     }
 

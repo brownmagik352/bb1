@@ -14,6 +14,9 @@ class ISBNViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let logo = #imageLiteral(resourceName: "logo_color-50")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
     }
 
     override func didReceiveMemoryWarning() {
