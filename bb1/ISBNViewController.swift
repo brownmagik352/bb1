@@ -9,6 +9,7 @@
 import UIKit
 
 class ISBNViewController: UIViewController {
+    @IBOutlet weak var manualEntryField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,9 @@ class ISBNViewController: UIViewController {
         let logo = #imageLiteral(resourceName: "logo_color-50")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
+        
+        // set focus to textfield automatically
+        self.manualEntryField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

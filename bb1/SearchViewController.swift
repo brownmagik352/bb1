@@ -1,19 +1,21 @@
 //
-//  UploadViewController.swift
+//  SearchViewController.swift
 //  bb1
 //
-//  Created by Apurv Suman on 11/25/16.
+//  Created by Apurv Suman on 11/28/16.
 //  Copyright © 2016 Apurv Suman. All rights reserved.
 //
 
 import UIKit
 
-class UploadViewController: UIViewController {
+class SearchViewController: UIViewController {
+    @IBOutlet weak var searchField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.searchField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,21 +24,14 @@ class UploadViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
-    @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let alertController = UIAlertController(title: "SUCCESS", message: "Your Book Was Successfully Uploaded", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(action)
-        
-        present(alertController, animated: true, completion: nil)
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }
