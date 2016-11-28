@@ -16,6 +16,9 @@
 		881D0CA31DD91FD500A9B511 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA21DD91FD500A9B511 /* Chat.swift */; };
 		881D0CA51DD920B400A9B511 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA41DD920B400A9B511 /* ChatTableViewCell.swift */; };
 		881D0CA71DD9236700A9B511 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D0CA61DD9236700A9B511 /* ChatTableViewController.swift */; };
+		88CFECC81DEC1024008CF1E3 /* TempChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CFECC71DEC1023008CF1E3 /* TempChatTableViewController.swift */; };
+		88CFECCA1DEC12CC008CF1E3 /* TempChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CFECC91DEC12CC008CF1E3 /* TempChatTableViewCell.swift */; };
+		88CFECCE1DEC1657008CF1E3 /* TempChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CFECCD1DEC1657008CF1E3 /* TempChat.swift */; };
 		88F2469C1DD03D5600434D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2469B1DD03D5600434D14 /* AppDelegate.swift */; };
 		88F246A31DD03D5700434D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F246A11DD03D5700434D14 /* Main.storyboard */; };
 		88F246A51DD03D5700434D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F246A41DD03D5700434D14 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 		881D0CA21DD91FD500A9B511 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		881D0CA41DD920B400A9B511 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		881D0CA61DD9236700A9B511 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		88CFECC71DEC1023008CF1E3 /* TempChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempChatTableViewController.swift; sourceTree = "<group>"; };
+		88CFECC91DEC12CC008CF1E3 /* TempChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempChatTableViewCell.swift; sourceTree = "<group>"; };
+		88CFECCD1DEC1657008CF1E3 /* TempChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempChat.swift; sourceTree = "<group>"; };
 		88F246981DD03D5600434D14 /* bb1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bb1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F2469B1DD03D5600434D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F246A21DD03D5700434D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 				881C12C81DE90327005CC857 /* UploadViewController.swift */,
 				881C12CA1DEA19B7005CC857 /* ISBNViewController.swift */,
 				881C12CC1DEA2BB4005CC857 /* ListingViewController.swift */,
+				88CFECC71DEC1023008CF1E3 /* TempChatTableViewController.swift */,
+				88CFECC91DEC12CC008CF1E3 /* TempChatTableViewCell.swift */,
+				88CFECCD1DEC1657008CF1E3 /* TempChat.swift */,
 			);
 			path = bb1;
 			sourceTree = "<group>";
@@ -162,9 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				881D0CA31DD91FD500A9B511 /* Chat.swift in Sources */,
+				88CFECCE1DEC1657008CF1E3 /* TempChat.swift in Sources */,
 				881C12C91DE90327005CC857 /* UploadViewController.swift in Sources */,
 				881D0CA11DD8D6FA00A9B511 /* ListingTableViewController.swift in Sources */,
+				88CFECCA1DEC12CC008CF1E3 /* TempChatTableViewCell.swift in Sources */,
 				88F2469C1DD03D5600434D14 /* AppDelegate.swift in Sources */,
+				88CFECC81DEC1024008CF1E3 /* TempChatTableViewController.swift in Sources */,
 				881D0CA51DD920B400A9B511 /* ChatTableViewCell.swift in Sources */,
 				881C12CB1DEA19B7005CC857 /* ISBNViewController.swift in Sources */,
 				881D0C9F1DD8D34300A9B511 /* Listing.swift in Sources */,
