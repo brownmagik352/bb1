@@ -68,11 +68,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="isbn" translatesAutoresizingMaskIntoConstraints="NO" id="mGW-CH-5gD">
-                                <frame key="frameInset" minX="67" minY="101" width="240" height="128"/>
+                                <frame key="frameInset" minX="67" minY="191" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K55-G6-Oo3">
-                                <frame key="frameInset" minX="67" minY="237" width="240" height="30"/>
+                                <frame key="frameInset" minX="67" minY="327" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.0" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Scan ISBN">
@@ -83,14 +83,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0001222233334" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVz-uc-gv5">
-                                <frame key="frameInset" minX="67" minY="318" width="240" height="30"/>
+                                <frame key="frameInset" minX="67" minY="408" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="search"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBn-Lr-rpB">
-                                <frame key="frameInset" minX="67" minY="356" width="240" height="30"/>
+                                <frame key="frameInset" minX="67" minY="446" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.0" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Enter ISBN">
@@ -339,7 +339,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cfg-Pu-yOs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sell" image="US Dollar-50" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PwL-hd-hSG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PwL-hd-hSG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -604,7 +604,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N26-Vz-BNa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NRT-Xp-g0h">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRT-Xp-g0h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -717,7 +717,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n6n-F5-N2t" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SJE-O3-WSe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SJE-O3-WSe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -735,7 +735,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="444-n7-2aP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="goM-W3-SMe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="goM-W3-SMe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -753,7 +753,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9wm-Qp-VYV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kkG-3a-2xK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kkG-3a-2xK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
